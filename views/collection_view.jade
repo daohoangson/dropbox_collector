@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  ul
+    each file in files
+      li
+        a(href='#{config.routes.files}/#{uid}#{file.path}') #{file.path}
+
+  div
+    form(action='#{config.routes.upload}', enctype='multipart/form-data', method='post')
+      input(type='file', name='files')
+      input(type='submit')
+      input(type='hidden', name='uid', value='#{uid}')
+      input(type='hidden', name='collection', value='#{collection}')

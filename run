@@ -1,0 +1,5 @@
+export DROPBOX_APP_KEY=plmkx75pp651ifo
+export DROPBOX_APP_SECRET=eh14umayxf9tqll
+export HOST_NAME=drolect.fdsa.me
+export PORT=3000
+node app.js

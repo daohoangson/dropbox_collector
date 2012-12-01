@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  ul
+    each collection in collections
+      li
+        a(href='#{config.routes.collections}/#{uid}#{collection.path}') #{collection.path}
+    li
+      a(href='#{config.routes.new}') #{config.phrases.new_collection}
